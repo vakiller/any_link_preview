@@ -86,6 +86,8 @@ class LinkViewHorizontal extends StatelessWidget {
                           imageProvider.svgImage == null
                       ? Container(color: bgColor ?? Colors.grey)
                       : Container(
+                          width: 48,
+                          height: 48,
                           margin: const EdgeInsets.only(right: 5),
                           decoration: BoxDecoration(
                             image: imageProvider.image != null
@@ -115,10 +117,6 @@ class LinkViewHorizontal extends StatelessWidget {
                       _buildTitleContainer(
                         titleStyle_,
                         computeTitleLines(layoutHeight),
-                      ),
-                      _buildBodyContainer(
-                        bodyStyle_,
-                        computeBodyLines(layoutHeight),
                       ),
                     ],
                   ),
