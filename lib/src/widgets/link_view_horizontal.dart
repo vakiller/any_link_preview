@@ -93,7 +93,7 @@ class LinkViewHorizontal extends StatelessWidget {
                             image: imageProvider.image != null
                                 ? DecorationImage(
                                     image: imageProvider.image!,
-                                    fit: BoxFit.cover,
+                                    fit: BoxFit.fitWidth,
                                   )
                                 : null,
                             borderRadius: radius == 0
@@ -140,7 +140,6 @@ class LinkViewHorizontal extends StatelessWidget {
               title,
               style: titleStyle,
               overflow: TextOverflow.ellipsis,
-              maxLines: maxLines_,
             ),
           ),
         ],
